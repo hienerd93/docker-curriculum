@@ -11,6 +11,7 @@
 `docker ps` list container currently run
 `docker ps -a` list all container  
 `docker run -it busybox sh` interactive tty
+`docker run -it --rm shine0901/foodtrucks-web bash`
 
 `docker rm $(docker ps -a -q -f status=exited)`  
 > `-q` only return numeric IDs  
@@ -34,6 +35,18 @@
 `docker build -t shine0901/catnip .`
 
 `docker push shine0901/catnip`
+
+`docker search elasticsearch`
+
+`docker container logs es`
+
+`docker network ls`  
+`docker network inspect bridge`
+
+`docker-compose up`  
+`docker-compose up -d`
+`docker-compose down -v`
+`docker network rm foodtrucks-net`
 
 ## Term
 
